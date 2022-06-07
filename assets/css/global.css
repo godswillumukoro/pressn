@@ -121,7 +121,7 @@ body {
 
 .container {
     margin: 0 auto;
-    max-width: 720px;
+    max-width: 680px;
 }
 
 a {
@@ -199,13 +199,15 @@ a {
         /* short cut for top right bottom and right */
         flex-direction: column;
         padding: min(30vh, 10rem) 2em;
-        background-color: #20527466;
-
+        background-color: #011b2dea;
     }
 
     @supports (backdrop-filter: blur(1rem)) {
         .navbar ul {
             background-color: var(--dark-transparent-color);
+            /* background: linear-gradient(to right bottom,
+                    rgba(255, 255, 255, 0.7),
+                    rgba(255, 255, 255, 0.3)); */
             backdrop-filter: blur(1rem);
         }
     }
@@ -214,4 +216,50 @@ a {
         flex-direction: column;
         font-size: 1.5rem;
     }
+}
+
+/* SINGLE BLOG */
+.mg-tp-1 {
+    margin-top: 1rem;
+}
+
+.mg-tp-2 {
+    margin-top: 2rem;
+}
+
+.mg-tp-4 {
+    margin-top: 4rem;
+}
+
+.mg-tp-6 {
+    margin-top: 6rem;
+}
+
+.mg-bt-1 {
+    margin-bottom: 1rem;
+}
+
+.mg-bt-2 {
+    margin-bottom: 2rem;
+}
+
+.mg-bt-4 {
+    margin-bottom: 4rem;
+}
+
+.mg-bt-6 {
+    margin-bottom: 10rem;
+}
+
+.prev-next {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.prev-next:hover,
+.prev-next:active {
+    opacity: .8;
+    text-decoration-color: var(--light-color);
 }
