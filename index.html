@@ -14,7 +14,8 @@
         <a href="./index.html">
             <h1 class="logo">pressn.</h1>
         </a>
-        <ul class="flex">
+        <button class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false">.</button>
+        <ul class="flex" id="primary-nav" data-visible="false">
             <li><a href="#">Reports</a></li>
             <li><a href="#">Data</a></li>
             <li><a href="#">About Us</a></li>
@@ -25,29 +26,16 @@
 
     <main class="container">
         <article>
-            <a href="./single-page.html">
+            <a href="./single-page.html" class="display-title">
                 <h2>Gambia to prosecute ex-dictator for human rights abuses</h2>
             </a>
             <span>July 7, 2019 <span>|</span> <a href="#">Godswill Umukoro</a></span>
             <p>The Gambian Government accepts the findings of the Truth Commission.
             </p>
         </article>
-        <article>
-            <a href="./single-page.html">
-                <h2>Gambia to prosecute ex-dictator for human rights abuses</h2>
-            </a>
-            <span>July 7, 2019 <span>|</span> <a href="#">Godswill Umukoro</a></span>
-            <p>The Gambian Government accepts the findings of the Truth Commission.
-            </p>
-        </article>
-        <article>
-            <a href="./single-page.html">
-                <h2>Gambia to prosecute ex-dictator for human rights abuses</h2>
-            </a>
-            <span>July 7, 2019 <span>|</span> <a href="#">Godswill Umukoro</a></span>
-            <p>The Gambian Government accepts the findings of the Truth Commission.
-            </p>
-        </article>
+        <section class="new-report">
+            <a href="./add-new-report.html" class="btn">Add a new report</a>
+        </section>
     </main>
 
     <!-- scroll bar -->
